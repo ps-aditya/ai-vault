@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Vault — keep the AI answers worth keeping</title>
+    <meta
+      name="description"
+      content="A tiny Chrome extension that saves the AI chats you actually care about. Highlight text on Claude or ChatGPT, hit Save, get a local Markdown file. No cloud, no accounts, no dialogs."
+    />
+    <meta name="keywords" content="save ChatGPT conversations, export Claude chats, AI conversation to Markdown, local-first AI notes, personal AI archive, ChatGPT knowledge base" />
+    <link rel="canonical" href="https://ps-aditya.github.io/ai-vault/" />
+    <meta property="og:title" content="AI Vault — keep the AI answers worth keeping" />
+    <meta property="og:description" content="Highlight text on Claude or ChatGPT, hit Save. It becomes a local Markdown file, no cloud, no accounts, no dialogs." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ps-aditya.github.io/ai-vault/" />
+    <meta property="og:image" content="https://ps-aditya.github.io/ai-vault/assets/icon.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AI Vault — keep the AI answers worth keeping" />
+    <meta name="twitter:description" content="A one-click local save for the AI chats that actually matter to you." />
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "AI Vault",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome",
+        "description": "Local-first Chrome extension that saves highlighted AI chat text as Markdown files on your own computer. No cloud, no accounts.",
+        "url": "https://ps-aditya.github.io/ai-vault/",
+        "codeRepository": "https://github.com/ps-aditya/ai-vault",
+        "license": "https://github.com/ps-aditya/ai-vault/blob/main/LICENSE",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top">
+        <img src="assets/icon.png" alt="" />
+        <span>AI Vault</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#what-you-get">What you get</a>
+        <a href="#sources">Supported sites</a>
+        <a class="nav-cta" href="https://github.com/ps-aditya/ai-vault">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">a local, one-click memory keeper</p>
+          <h1>Some AI answers are worth keeping.</h1>
+          <p class="lede">
+            You know the ones — the career advice that actually landed, the
+            workout plan you meant to follow, the fix that saved your
+            afternoon. AI Vault saves them where you'll actually stumble
+            back onto them: a plain Markdown file on your own computer.
+          </p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="https://github.com/ps-aditya/ai-vault/releases/latest">Get it on GitHub</a>
+            <a class="btn-ghost" href="#how-it-works">See how it works</a>
+          </div>
+          <p class="hero-fineprint">Free. Open source. Nothing leaves your computer.</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="index-card">
+            <div class="card-row card-head">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <p class="card-line card-line--muted">...so start with the AWS fundamentals track, then move</p>
+            <p class="card-line card-line--highlight">
+              into infrastructure-as-code once you're comfortable reading
+              CloudFormation templates end to end.
+            </p>
+            <p class="card-line card-line--muted">Want me to lay out a week-by-week plan?</p>
+            <div class="save-pill">Save</div>
+            <div class="stamp">SAVED</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sequence" id="how-it-works">
+        <div class="section-head">
+          <p class="eyebrow">the whole workflow</p>
+          <h2>Three steps, in this order, every time.</h2>
+        </div>
+        <div class="sequence-rail">
+          <article>
+            <span class="seq-number">01</span>
+            <h3>Select</h3>
+            <p>Highlight the part of the reply that's actually worth keeping — not the whole conversation, just the good part.</p>
+          </article>
+          <article>
+            <span class="seq-number">02</span>
+            <h3>Save</h3>
+            <p>Click the small Save button that appears, or press Ctrl+Shift+S. No popup, no typing a filename, no folder to pick.</p>
+          </article>
+          <article>
+            <span class="seq-number">03</span>
+            <h3>Rediscover</h3>
+            <p>Weeks later, you open your Downloads and stumble onto it again — the same way you'd find a good note in a drawer.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="file-preview" id="what-you-get">
+        <div class="section-head compact">
+          <p class="eyebrow">what actually gets created</p>
+          <h2>Just a file. Nothing clever.</h2>
+          <p>
+            No account, no sync, no AI-written summary pretending to know
+            what your conversation meant. Just the text you chose, with a
+            few honest details about where it came from.
+          </p>
+        </div>
+        <div class="md-card">
+          <div class="md-card-bar">
+            <span>systems-engineering-internship-roadmap_2026-07-09.md</span>
+          </div>
+          <pre class="md-card-body"><span class="md-rule">---</span>
+<span class="md-key">source:</span> claude.ai
+<span class="md-key">date:</span> 2026-07-09, 6:41 PM
+<span class="md-key">title:</span> <span class="md-str">"Systems Engineering Internship Roadmap"</span>
+<span class="md-key">preview:</span> <span class="md-str">"Start with the AWS fundamentals track, then move into..."</span>
+<span class="md-key">url:</span> https://claude.ai/chat/...
+<span class="md-rule">---</span>
+
+Start with the AWS fundamentals track, then move into
+infrastructure-as-code once you're comfortable reading
+CloudFormation templates end to end.</pre>
+        </div>
+      </section>
+
+      <section class="principles">
+        <div class="section-head compact">
+          <p class="eyebrow">deliberately not doing more than this</p>
+          <h2>What this won't do, on purpose.</h2>
+        </div>
+        <div class="principle-grid">
+          <article>
+            <h3>No AI-written titles</h3>
+            <p>Filenames and previews are your own literal words, not a model's summary of them. You should recognize the file as something you saved, not something that was filed for you.</p>
+          </article>
+          <article>
+            <h3>No cloud, no account</h3>
+            <p>Nothing is uploaded anywhere. The extension writes a file to your Downloads folder and does nothing else.</p>
+          </article>
+          <article>
+            <h3>No sorting by app</h3>
+            <p>Claude and ChatGPT saves land in the same folder, on purpose. A good chat is a good chat, regardless of which app it came from.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sources" id="sources">
+        <div class="section-head compact">
+          <p class="eyebrow">where it works today</p>
+          <h2>Two sites, done properly.</h2>
+        </div>
+        <div class="source-badges">
+          <span class="source-badge">claude.ai</span>
+          <span class="source-badge">chatgpt.com</span>
+          <span class="source-badge source-badge--soon">more, if people ask</span>
+        </div>
+        <p class="sources-note">
+          Want another site supported? <a href="https://github.com/ps-aditya/ai-vault/issues">Open an issue</a> — that's the actual roadmap.
+        </p>
+      </section>
+
+      <section class="community">
+        <div class="section-head compact">
+          <p class="eyebrow">open source</p>
+          <h2>Small enough to read in one sitting.</h2>
+          <p>MIT licensed. No build step, no framework — just the extension's own source, readable end to end.</p>
+        </div>
+        <div class="community-links">
+          <a href="https://github.com/ps-aditya/ai-vault">Source code</a>
+          <a href="https://github.com/ps-aditya/ai-vault/releases/latest">Releases</a>
+          <a href="https://github.com/ps-aditya/ai-vault/issues">Feedback &amp; requests</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>MIT licensed</span>
+      <a href="https://github.com/ps-aditya/ai-vault">GitHub</a>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

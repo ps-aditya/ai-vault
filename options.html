@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>AI Vault — Settings</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f7f6f4;
+      color: #1e1e20;
+      max-width: 480px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    p.sub {
+      color: #666;
+      font-size: 13px;
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .row span.prefix {
+      font-size: 13px;
+      color: #666;
+      white-space: nowrap;
+    }
+    input[type="text"] {
+      flex: 1;
+      font-size: 14px;
+      padding: 8px 10px;
+      border: 1px solid #d8d6d2;
+      border-radius: 6px;
+      background: white;
+    }
+    input[type="text"]:focus {
+      outline: 2px solid #d6b27a;
+      outline-offset: 1px;
+    }
+    button {
+      margin-top: 12px;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      background: #1e1e20;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #333;
+    }
+    .note {
+      font-size: 12px;
+      color: #888;
+      margin-top: 20px;
+      line-height: 1.5;
+    }
+    #status {
+      font-size: 12px;
+      color: #2e6b3e;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>AI Vault</h1>
+  <p class="sub">Choose the subfolder name inside your Downloads folder.</p>
+
+  <label for="folderName">Save into:</label>
+  <div class="row">
+    <span class="prefix">Downloads /</span>
+    <input type="text" id="folderName" placeholder="AI Vault" />
+  </div>
+
+  <button id="save">Save</button>
+  <span id="status"></span>
+
+  <p class="note">
+    Chrome only allows extensions to save inside the Downloads folder (or a
+    named subfolder of it) — not to arbitrary locations like Documents or
+    Desktop. Renaming here just changes the subfolder name; all your
+    existing saved files will stay where they are.
+  </p>
+
+  <script src="options.js"></script>
+</body>
+</html>
