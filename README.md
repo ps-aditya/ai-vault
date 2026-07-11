@@ -1,7 +1,14 @@
-# AI Vault
+<p align="center">
+  <img src="icons/icon128.png" alt="AI Vault logo" width="88" />
+</p>
 
-Highlight text on Claude or ChatGPT, hit **Save**. It becomes a Markdown
-file on your computer. That's the whole thing.
+<h1 align="center">AI Vault</h1>
+
+<p align="center">
+  Highlight text on Claude or ChatGPT, hit <b>Save</b>. It becomes a Markdown file on your computer.
+</p>
+
+That's the whole thing.
 
 No dialogs, no naming it yourself, no digging through your Downloads
 folder later wondering where it went.
@@ -22,7 +29,7 @@ This is just that last step, minus the friction.
 2. Open `chrome://extensions`
 3. Turn on **Developer mode** (top right)
 4. Click **Load unpacked**, select this folder
-5. Done - you'll see "AI Vault" in your extensions list
+5. Done — you'll see "AI Vault" in your extensions list
 
 ## Use
 
