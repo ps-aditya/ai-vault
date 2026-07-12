@@ -109,8 +109,8 @@ function createPillAt(clientX, clientY) {
 
 // Only worth offering a save for something roughly sentence-sized or
 // bigger — a stray word or short phrase shouldn't trigger the pill.
-const MIN_WORDS = 6;
-const MIN_CHARS = 25;
+const MIN_WORDS = 50;
+const MIN_CHARS = 250;
 
 function isWorthSaving(text) {
   if (text.length < MIN_CHARS) return false;
