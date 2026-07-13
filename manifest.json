@@ -3,7 +3,7 @@
   "name": "AI Vault - Save to Markdown",
   "version": "1.0.0",
   "description": "Highlight text on Claude or ChatGPT, hit Save. It becomes a file on your computer.",
-  "permissions": ["downloads", "activeTab", "scripting", "notifications", "storage"],
+  "permissions": ["downloads", "activeTab", "notifications", "storage"],
   "host_permissions": ["https://claude.ai/*", "https://chatgpt.com/*"],
   "options_page": "options.html",
   "background": {

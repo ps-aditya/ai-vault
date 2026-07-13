@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Vault — Privacy Policy</title>
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .legal {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: clamp(3rem, 7vw, 5rem) clamp(1.2rem, 4vw, 2rem) 5rem;
+      }
+      .legal h1 {
+        font-size: clamp(1.7rem, 3.4vw, 2.2rem);
+        margin-bottom: 0.5rem;
+      }
+      .legal p.updated {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.78rem;
+        color: var(--faint);
+        margin-top: 0;
+        margin-bottom: 2.2rem;
+      }
+      .legal h2 {
+        font-family: "Fraunces", serif;
+        font-size: 1.15rem;
+        margin: 2.2rem 0 0.7rem;
+      }
+      .legal p,
+      .legal li {
+        color: var(--muted);
+        font-size: 0.96rem;
+        line-height: 1.7;
+      }
+      .legal ul {
+        padding-left: 1.2rem;
+      }
+      .legal a {
+        color: var(--brass);
+        border-bottom: 1px solid var(--brass-line);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <img src="assets/icon.png" alt="" />
+        <span>AI Vault</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a class="nav-cta" href="https://github.com/ps-aditya/ai-vault">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="legal">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: July 2026</p>
+
+        <p>
+          AI Vault is a local-first browser extension. This policy is
+          short because there isn't much to say — that's on purpose.
+        </p>
+
+        <h2>What data is collected</h2>
+        <p>None. AI Vault does not collect, transmit, or have access to
+        any of your data beyond your own device.</p>
+
+        <h2>What the extension actually does</h2>
+        <ul>
+          <li>Reads text you've explicitly highlighted on claude.ai or chatgpt.com, only when you click Save or press the save hotkey.</li>
+          <li>Writes that text to a Markdown file in your own Downloads folder, using Chrome's built-in downloads API.</li>
+          <li>Stores one setting locally on your device — the name of the subfolder to save into — using Chrome's local storage API. This never leaves your device.</li>
+          <li>Shows a local system notification confirming a save happened.</li>
+        </ul>
+
+        <h2>What never happens</h2>
+        <ul>
+          <li>No data is sent to any server, by us or anyone else.</li>
+          <li>No analytics, tracking, or telemetry of any kind.</li>
+          <li>No account, sign-in, or identifying information is collected.</li>
+          <li>No data is shared with third parties, because none is collected in the first place.</li>
+        </ul>
+
+        <h2>Permissions, and why each is needed</h2>
+        <ul>
+          <li><b>downloads</b> — to write the saved Markdown file to your Downloads folder.</li>
+          <li><b>activeTab</b> — to read your current text selection on the active tab, only when you trigger a save.</li>
+          <li><b>storage</b> — to remember your chosen save-folder name, locally on your device.</li>
+          <li><b>notifications</b> — to show a small "Saved" confirmation.</li>
+          <li><b>Host access to claude.ai and chatgpt.com</b> — so the Save button can appear on those two sites specifically. AI Vault does not run on, or have access to, any other site.</li>
+        </ul>
+
+        <h2>Changes to this policy</h2>
+        <p>
+          If this ever changes, this page will be updated and the date
+          above will reflect it. Given the extension's scope, we don't
+          expect that to happen.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          Questions or concerns: open an issue on the
+          <a href="https://github.com/ps-aditya/ai-vault/issues">GitHub repository</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <span>MIT licensed</span>
+      <a href="index.html">Home</a>
+      <a href="https://github.com/ps-aditya/ai-vault">GitHub</a>
+    </footer>
+  </body>
+</html>
