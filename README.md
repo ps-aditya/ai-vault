@@ -8,6 +8,10 @@
   Highlight text on Claude or ChatGPT, hit <b>Save</b>. It becomes a Markdown file on your computer.
 </p>
 
+<p align="center">
+  <img src="demo.gif" width="600" alt="Selecting text on Claude, clicking Save, and the file saving confirmation" />
+</p>
+
 That's the whole thing.
 
 No dialogs, no naming it yourself, no digging through your Downloads
