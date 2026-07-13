@@ -191,6 +191,25 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") removePill();
 });
 
-document.addEventListener("mousedown", (e) => {
-  if (pillEl && e.target !== pillEl) removePill();
+// Capture phase, not bubble — some site UI (their own selection popups)
+// may call stopPropagation() on click events for their own purposes,
+// which would otherwise stop this listener from ever running and leave
+// the pill orphaned on screen after clicking elsewhere.
+document.addEventListener(
+  "mousedown",
+  (e) => {
+    if (pillEl && e.target !== pillEl) removePill();
+  },
+  true
+);
+
+// Belt-and-suspenders: selectionchange fires whenever the browser's
+// selection state changes, regardless of what any click handler on the
+// page does with event propagation — so this catches the pill-orphaned
+// bug even in cases the capture-phase listener above might still miss.
+document.addEventListener("selectionchange", () => {
+  if (!pillEl) return;
+  const selection = window.getSelection();
+  const text = selection ? selection.toString().trim() : "";
+  if (!text) removePill();
 });
